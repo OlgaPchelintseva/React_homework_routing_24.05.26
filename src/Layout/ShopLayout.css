@@ -1,0 +1,33 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+    background-color: rgb(204, 181, 223);
+    padding: 0 20px;
+    font-size: 1.3rem;
+    border-bottom: 1px solid rgb(70, 52, 92);
+    box-shadow: 0 10px 10px rgba(70, 52, 92, 0.8);
+}
+
+nav{
+    display: flex;
+    gap: 130px;
+}
+
+img{
+    width: 130px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+}
+.nav-link.active{
+    color: rgb(70, 52, 92);
+    font-weight: bold;
+}
