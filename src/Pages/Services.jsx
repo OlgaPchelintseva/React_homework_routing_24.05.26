@@ -3,6 +3,7 @@ import shirtStans from './shirt-stans.jpg';
 import shirtBlind from './shirt-blind.jpg';
 import cap from './cap.jpg';
 import sweatshirt from './sweatshirt.png';
+import './Services.css';
 
 const ARTICLES_DATA = [
     {id: 'shirt-stans',
@@ -30,14 +31,14 @@ const ARTICLES_DATA = [
 function Services (){
     return (
         <>
-            <h1>Товары в наличии</h1>
-            <div>
+            <h1 className='titleServices'>Товары в наличии</h1>
+            <div className='cardBox'>
                 {ARTICLES_DATA.map((service) => (
-                    <article key={service.id}>
+                    <article key={service.id} className='card'>
                         <h2>{service.title}</h2>
                         <img src={service.photo} />
                         <p>{service.description}</p>
-                        <Link to={`/services/${service.id}`}>Подробнее о товаре</Link>
+                        <Link to={`/services/${service.id}`} className='info'>Подробнее о товаре</Link>
                     </article>
                 ))}
             </div>

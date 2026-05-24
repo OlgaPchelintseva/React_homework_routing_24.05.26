@@ -1,0 +1,42 @@
+.titleServices{
+    text-align: center;
+    margin: 40px;
+}
+
+.cardBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+}
+
+.card{
+    text-align: center;
+    box-shadow: 5px 3px 10px rgba(35, 8, 75, 0.225);
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card:hover{
+    box-shadow: 5px 3px 10px rgba(35, 8, 75, 0.562);
+    transform: translate(5px, 5px);
+    transition: 0.3s;
+}
+
+.info{
+    text-decoration: none;
+    border: 1px solid rgb(35, 8, 75);
+    padding: 5px 10px;
+    background-color: rgb(35, 8, 75);
+    color: white;
+    box-shadow: 3px 2px 7px rgba(35, 8, 75, 0.562);
+    margin: 10px;
+}
+
+.info:hover{
+    background-color: rgb(94, 58, 148);
+}

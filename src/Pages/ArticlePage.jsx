@@ -1,4 +1,5 @@
 import {useParams, useNavigate } from 'react-router-dom';
+import './ArticlePage.css';
 
 
 function ArticlePage(){
@@ -9,12 +10,13 @@ function ArticlePage(){
 
     return (
         <>
-            <button onClick={handleGoBack}>Назад к товарам</button>
             <div>
-                <h1>Вы на странице товара: {serviceid}</h1>
-                <p>тут описание товара</p>
+                <h1 className='titleArticlePage'>Вы на странице товара: {serviceid}</h1>
             </div>
-            <button onClick={handleGoHome}>На главную страницу</button>
+            <div className='btnBox'>
+                <button onClick={handleGoBack} className='btn'>Назад к товарам</button>
+                <button onClick={handleGoHome} className='btn'>На главную страницу</button>
+            </div>
         </>
     );
 };
